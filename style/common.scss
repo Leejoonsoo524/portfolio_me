@@ -1,0 +1,53 @@
+$header_fixed_color:#0A0F14;
+$header_font_color:#F1F1F1;
+$header_search_color:#333;
+$header_search_font_color:#666;
+$main_camp_font_color:#555;
+$color_light_gray:#C7C7C7;
+$color_white:#FFF;
+$footer_color:#F0F0F0;
+
+@mixin mainTitle_font{
+    //80px
+    font-size: 5rem;    
+    font-weight: 700;
+    letter-spacing: -2%;
+    line-height: 150%;
+}
+@mixin subTitle_font{
+    //40px
+    font-size: 2.5rem;    
+    font-weight: 700;
+    letter-spacing: -2%;    
+}
+@mixin mainPage_font{
+    //20px
+    font-size: 1.25rem;    
+    letter-spacing: -2%;
+    line-height: 150%;
+}
+@mixin profile_font{
+    //18px
+    font-size: 1.125rem;        
+    letter-spacing: -2%;    
+    line-height: 150%;
+}
+@mixin profileHistory_font{
+    //18px
+    font-size: 1.75rem;        
+    font-weight: 700;
+    letter-spacing: -2%;    
+    line-height: 150%;    
+}
+@mixin projectSkill_font{
+    //16px
+    font-size: 1rem;            
+    letter-spacing: -2%;    
+    line-height: 150%;    
+}
+@mixin projectTime_font{
+    //14px
+    font-size: 0.875rem;            
+    letter-spacing: -2%;    
+    line-height: 150%;    
+}
