@@ -10,44 +10,37 @@ $footer_color:#F0F0F0;
 @mixin mainTitle_font{
     //80px
     font-size: 5rem;    
-    font-weight: 700;
-    letter-spacing: -2%;
-    line-height: 150%;
+    font-weight: 700;    
+    line-height: 130%;
 }
 @mixin subTitle_font{
     //40px
     font-size: 2.5rem;    
-    font-weight: 700;
-    letter-spacing: -2%;    
+    font-weight: 700;    
+}
+@mixin titleHistory_font{
+    //28px
+    font-size: 1.75rem;        
+    font-weight: 700;    
+    line-height: 150%;    
 }
 @mixin mainPage_font{
     //20px
-    font-size: 1.25rem;    
-    letter-spacing: -2%;
+    font-size: 1.25rem;        
     line-height: 150%;
 }
 @mixin profile_font{
     //18px
-    font-size: 1.125rem;        
-    letter-spacing: -2%;    
+    font-size: 1.125rem;             
     line-height: 150%;
 }
-@mixin profileHistory_font{
-    //18px
-    font-size: 1.75rem;        
-    font-weight: 700;
-    letter-spacing: -2%;    
-    line-height: 150%;    
-}
-@mixin projectSkill_font{
+@mixin subHistory_font{
     //16px
-    font-size: 1rem;            
-    letter-spacing: -2%;    
+    font-size: 1rem;                
     line-height: 150%;    
 }
 @mixin projectTime_font{
     //14px
-    font-size: 0.875rem;            
-    letter-spacing: -2%;    
+    font-size: 0.875rem;                
     line-height: 150%;    
 }

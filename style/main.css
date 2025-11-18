@@ -1,3 +1,269 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+header.scroll {
+  background: #FFF;
+}
+header .header_inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1680px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+header .header_inner h1 a {
+  font-size: 1.25rem;
+  line-height: 150%;
+  font-weight: 700;
+  display: block;
+  padding: 10px 5px;
+}
+header .header_inner h1:hover {
+  opacity: 0.5;
+}
+header .header_inner nav {
+  align-content: center;
+}
+header .header_inner nav .port_list {
+  display: flex;
+  gap: 80px;
+}
+header .header_inner nav .port_list li {
+  font-size: 1.25rem;
+  line-height: 150%;
+  padding: 10px 5px;
+}
+header .header_inner nav .port_list li a {
+  display: block;
+}
+header .header_inner nav .port_list li:hover {
+  opacity: 0.5;
+}
 
+main #main_wrap {
+  height: 100vh;
+  background: url("../port_img/main_img.png") no-repeat center/cover;
+  align-content: center;
+  margin-bottom: 80px;
+}
+main #main_wrap .main_text {
+  max-width: 1680px;
+  margin: 0 120px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 80px;
+}
+main #main_wrap .main_text h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 130%;
+}
+main #main_wrap .main_text p {
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+main #about_me {
+  margin-bottom: 80px;
+  padding: 20px 0;
+}
+main #about_me .about_inner {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 80px;
+}
+main #about_me .about_inner h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+main #about_me .about_inner h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+main #about_me .about_inner .about_profile {
+  max-width: 1680px;
+  margin: 0 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main #about_me .about_inner .about_profile img {
+  display: block;
+}
+main #about_me .about_inner .about_profile .profile_text p {
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+main #about_me .about_inner .about_profile .profile_text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+main #about_me .about_inner .work_edu .about_history {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 1680px;
+  margin: 0 300px;
+  gap: 316px;
+}
+main #about_me .about_inner .work_edu .about_history .work_h {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+main #about_me .about_inner .work_edu .about_history .work_h p {
+  font-size: 1rem;
+  line-height: 150%;
+}
+main #about_me .about_inner .work_edu .about_history .edu_h {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+main #about_me .about_inner .work_edu .about_history .edu_h p {
+  font-size: 1rem;
+  line-height: 150%;
+}
+main #about_me .about_inner .skill .skill_inner {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 1680px;
+  margin: 0 300px;
+  gap: 20px;
+}
+main #about_me .about_inner .skill .skill_inner .tech {
+  display: flex;
+  justify-content: space-between;
+}
+main #about_me .about_inner .skill .skill_inner .tech img {
+  width: 70%;
+}
+main #project_make {
+  padding: 20px 0;
+  margin-bottom: 80px;
+}
+main #project_make .project_inner {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 70px;
+}
+main #project_make .project_inner h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+main #project_make .project_inner .project_list {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 1680px;
+  margin: 0 120px;
+  justify-content: space-between;
+}
+main #project_make .project_inner .project_list li {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+  text-align: center;
+}
+main #project_make .project_inner .project_list li h4 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+main #project_make .project_inner .project_list li .use_skill {
+  font-size: 1rem;
+  line-height: 150%;
+}
+main #project_make .project_inner .project_list li .make_time {
+  font-size: 0.875rem;
+  line-height: 150%;
+}
+main #project_make .project_inner .project_list li .link_btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main #project_make .project_inner .project_list li .link_btn > a {
+  display: block;
+  padding: 15px 36px;
+  align-content: center;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+main #project_make .project_inner .project_list li .link_btn > a:hover {
+  background: skyblue;
+  color: #fff;
+}
+main #project_make .project_inner .project_list li .origin {
+  align-self: flex-start;
+  font-size: 12px;
+  color: #bbb;
+  text-decoration: none;
+  padding: 0 5px;
+}
+main #project_make .project_inner .project_list li .origin:hover {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+main #graphic_design {
+  padding: 20px 0;
+  margin-bottom: 80px;
+}
+main #graphic_design .graphic_inner {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 50px;
+}
+main #graphic_design .graphic_inner h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+main #graphic_design .graphic_inner .make_img {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 1680px;
+  margin: 0 120px;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  background: #ddd;
+  width: 100%;
+  padding: 250px 0;
+}
+footer h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+footer .contact_text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 150%;
+  font-weight: 700;
+  gap: 20px;
+}
+footer .contact_text span {
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+footer .mail {
+  font-size: 1.125rem;
+  line-height: 150%;
+}
 
 /*# sourceMappingURL=main.css.map */

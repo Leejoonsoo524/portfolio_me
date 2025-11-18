@@ -1,1 +1,224 @@
-@use './common.scss' as *;
+@use './common.scss' as *;    
+header{   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;     
+    &.scroll{
+        background: #FFF;        
+    }   
+    .header_inner{
+        display: flex;
+        justify-content: space-between;    
+        max-width: 1680px;
+        padding: 20px 0;
+        margin: 0 auto;
+        h1{
+            a{
+                @include mainPage_font;
+                font-weight: 700;
+                display: block;
+                padding: 10px 5px;
+            }        
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+        nav{    
+            align-content: center;    
+            .port_list{
+                display: flex;
+                gap: 80px;            
+                li{
+                    @include mainPage_font;
+                    padding: 10px 5px;
+                    a{
+                        display: block;                        
+                    }
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }        
+}
+
+main{
+    #main_wrap{
+        height: 100vh;
+        background: url('../port_img/main_img.png') no-repeat center/cover;
+        align-content: center;  
+        margin-bottom: 80px;      
+        .main_text{            
+            max-width: 1680px;
+            margin: 0 120px;
+            display: flex;
+            flex-flow: column wrap;
+            gap: 80px;
+            h2{@include mainTitle_font;}
+            p{@include mainPage_font;}
+        }
+    }
+
+    #about_me{        
+        margin-bottom: 80px;   
+        padding: 20px 0;
+        .about_inner{
+            display: flex;
+            flex-flow: column wrap;  // 세로 배치
+            gap: 80px;
+            h2{@include subTitle_font; text-align: center}
+            h3{@include titleHistory_font;}
+            .about_profile{
+                max-width: 1680px;
+                margin: 0 300px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                img{display: block;}
+                .profile_text{
+                    p{@include profile_font;}
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: space-between;
+                }
+                
+            }
+            .work_edu{
+                .about_history{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    max-width: 1680px;
+                    margin: 0 300px;
+                    gap: 316px;                    
+                    .work_h{
+                        display: flex;
+                        flex-flow: column wrap;
+                        gap: 20px;
+                        p{@include subHistory_font;}
+                    }
+                    .edu_h{
+                        display: flex;
+                        flex-flow: column wrap;
+                        gap: 20px;
+                        p{@include subHistory_font;}
+                    }                    
+                }                
+            }
+            .skill{
+                .skill_inner{
+                    display: flex;
+                    flex-flow: column wrap;
+                    max-width: 1680px;
+                    margin: 0 300px;
+                    gap: 20px;
+                    .tech{
+                        display: flex;
+                        justify-content: space-between;
+                        img{width: 70%;}
+                    }
+                }
+            }
+        }
+    }
+
+    #project_make{   
+        padding: 20px 0;
+        margin-bottom: 80px;
+        .project_inner{
+            display: flex;
+            flex-flow: column wrap;
+            gap: 70px;
+            h2{@include subTitle_font; text-align: center;}
+            .project_list{
+                display: flex;
+                flex-flow: row nowrap;
+                max-width: 1680px;
+                margin: 0 120px;
+                justify-content: space-between;                                       
+                li{
+                    display: flex;
+                    flex-flow: column wrap;
+                    gap: 20px;
+                    text-align: center;
+                    h4{@include titleHistory_font;}
+                    .use_skill{@include subHistory_font;}
+                    .make_time{@include projectTime_font;}
+                    .link_btn{
+                        display: flex;
+                        flex-flow: row nowrap;   
+                        justify-content: space-between;                 
+                        > a{
+                            display: block;                            
+                            padding: 15px 36px;
+                            align-content: center;                        
+                            border: 1px solid #ddd;
+                            border-radius: 12px;
+                            &:hover{
+                                background: skyblue;
+                                color: #fff;
+                            }
+                        }                        
+                    }
+                    .origin{                                                
+                        align-self: flex-start;
+                        font-size: 12px;
+                        color: #bbb;
+                        text-decoration: none;
+                        padding: 0 5px;
+                        &:hover{
+                            color:#000;        
+                            text-decoration: underline;
+                            text-underline-offset: 4px;                    
+                        }
+                    }
+                }
+            }
+        }        
+    }
+
+    #graphic_design{
+        padding: 20px 0;
+        margin-bottom: 80px;
+        .graphic_inner{
+            display: flex;
+            flex-flow: column wrap;
+            gap: 50px;
+            h2{@include subTitle_font; text-align: center;}
+            .make_img{
+                display: flex;
+                flex-flow: row nowrap;
+                max-width: 1680px;
+                margin: 0 120px;
+                justify-content: space-between;
+            }
+        }
+    }    
+}
+
+footer{
+    display: flex;
+    flex-flow: column ;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    background: #ddd;
+    width: 100%;
+    padding: 250px 0;    
+    h3{@include subTitle_font;}
+    .contact_text{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        @include titleHistory_font;
+        font-weight: 700;
+        gap: 20px;
+        span{@include profile_font;}
+    }
+    .mail{
+        @include profile_font;
+    }
+}
+
