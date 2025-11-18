@@ -142,7 +142,7 @@ main{
                     display: flex;
                     flex-flow: column wrap;
                     gap: 20px;
-                    text-align: center;
+                    text-align: center;                    
                     h4{@include titleHistory_font;}
                     .use_skill{@include subHistory_font;}
                     .make_time{@include projectTime_font;}
