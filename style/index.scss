@@ -67,7 +67,7 @@ main{
         padding: 20px 0;
         .about_inner{
             display: flex;
-            flex-flow: column wrap;  // 세로 배치
+            flex-flow: column wrap; 
             gap: 80px;
             h2{@include subTitle_font; text-align: center}
             h3{@include titleHistory_font;}
@@ -92,7 +92,7 @@ main{
                     flex-flow: row nowrap;
                     max-width: 1680px;
                     margin: 0 300px;
-                    gap: 316px;                    
+                    gap: 210px;                    
                     .work_h{
                         display: flex;
                         flex-flow: column wrap;
