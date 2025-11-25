@@ -31,7 +31,7 @@ header{
                 display: flex;
                 gap: 80px;            
                 li{
-                    @include mainPage_font;
+                    @include profile_font;
                     padding: 10px 5px;
                     a{
                         display: block;                        
@@ -92,7 +92,7 @@ main{
                     flex-flow: row nowrap;
                     max-width: 1680px;
                     margin: 0 300px;
-                    gap: 210px;                    
+                    gap: 320px;                    
                     .work_h{
                         display: flex;
                         flex-flow: column wrap;
@@ -142,7 +142,7 @@ main{
                     display: flex;
                     flex-flow: column wrap;
                     gap: 20px;
-                    text-align: center;                    
+                    text-align: center;                      
                     h4{@include titleHistory_font;}
                     .use_skill{@include subHistory_font;}
                     .make_time{@include projectTime_font;}

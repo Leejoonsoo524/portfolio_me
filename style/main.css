@@ -33,7 +33,7 @@ header .header_inner nav .port_list {
   gap: 80px;
 }
 header .header_inner nav .port_list li {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 150%;
   padding: 10px 5px;
 }
@@ -109,7 +109,7 @@ main #about_me .about_inner .work_edu .about_history {
   flex-flow: row nowrap;
   max-width: 1680px;
   margin: 0 300px;
-  gap: 210px;
+  gap: 320px;
 }
 main #about_me .about_inner .work_edu .about_history .work_h {
   display: flex;
