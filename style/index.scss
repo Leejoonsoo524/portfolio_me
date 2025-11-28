@@ -193,6 +193,27 @@ main{
                 max-width: 1680px;
                 margin: 0 120px;
                 justify-content: space-between;
+                li{
+                    .img_detail{
+                        display: flex;
+                        flex-flow: column wrap;
+                        text-align: center;
+                        gap: 10px;
+                        img{
+                            width: 350px;
+                            height: 400px;                                                
+                        }                        
+                    }    
+                    a{
+                        display: inline-block;
+                        padding: 10px;                             
+                        border: 1px solid #aaa;
+                        &:hover{
+                            background: skyblue;
+                            color: #fff;
+                        }
+                    }                                           
+                }                
             }
         }
     }    

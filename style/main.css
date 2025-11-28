@@ -232,6 +232,25 @@ main #graphic_design .graphic_inner .make_img {
   margin: 0 120px;
   justify-content: space-between;
 }
+main #graphic_design .graphic_inner .make_img li .img_detail {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  gap: 10px;
+}
+main #graphic_design .graphic_inner .make_img li .img_detail img {
+  width: 350px;
+  height: 400px;
+}
+main #graphic_design .graphic_inner .make_img li a {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+main #graphic_design .graphic_inner .make_img li a:hover {
+  background: skyblue;
+  color: #fff;
+}
 
 footer {
   display: flex;
