@@ -11,8 +11,7 @@ header.scroll {
 header .header_inner {
   display: flex;
   justify-content: space-between;
-  max-width: 1680px;
-  padding: 20px 0;
+  padding: 20px 120px;
   margin: 0 auto;
 }
 header .header_inner h1 a {
@@ -67,6 +66,7 @@ main #main_wrap .main_text p {
   line-height: 150%;
 }
 main #about_me {
+  width: 100%;
   margin-bottom: 80px;
   padding: 20px 0;
 }
@@ -86,7 +86,6 @@ main #about_me .about_inner h3 {
   line-height: 150%;
 }
 main #about_me .about_inner .about_profile {
-  max-width: 1680px;
   margin: 0 300px;
   display: flex;
   flex-flow: row nowrap;
@@ -107,9 +106,8 @@ main #about_me .about_inner .about_profile .profile_text {
 main #about_me .about_inner .work_edu .about_history {
   display: flex;
   flex-flow: row nowrap;
-  max-width: 1680px;
   margin: 0 300px;
-  gap: 320px;
+  justify-content: space-between;
 }
 main #about_me .about_inner .work_edu .about_history .work_h {
   display: flex;
@@ -121,6 +119,7 @@ main #about_me .about_inner .work_edu .about_history .work_h p {
   line-height: 150%;
 }
 main #about_me .about_inner .work_edu .about_history .edu_h {
+  width: 731px;
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
@@ -132,7 +131,6 @@ main #about_me .about_inner .work_edu .about_history .edu_h p {
 main #about_me .about_inner .skill .skill_inner {
   display: flex;
   flex-flow: column wrap;
-  max-width: 1680px;
   margin: 0 300px;
   gap: 20px;
 }
@@ -160,7 +158,6 @@ main #project_make .project_inner h2 {
 main #project_make .project_inner .project_list {
   display: flex;
   flex-flow: row nowrap;
-  max-width: 1680px;
   margin: 0 120px;
   justify-content: space-between;
 }
@@ -228,7 +225,6 @@ main #graphic_design .graphic_inner h2 {
 main #graphic_design .graphic_inner .make_img {
   display: flex;
   flex-flow: row nowrap;
-  max-width: 1680px;
   margin: 0 120px;
   justify-content: space-between;
 }
