@@ -159,7 +159,7 @@ main #project_make .project_inner .project_list {
   display: flex;
   flex-flow: row nowrap;
   margin: 0 120px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 main #project_make .project_inner .project_list li {
   display: flex;
@@ -185,6 +185,7 @@ main #project_make .project_inner .project_list li .link_btn {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+main #project_make .project_inner .project_list li .link_btn2{width: 100%;display: block;}
 main #project_make .project_inner .project_list li .link_btn > a {
   display: block;
   padding: 15px 36px;
